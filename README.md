@@ -22,5 +22,5 @@ Similarly the tool have forms to insert Products, Containers, and Deliveries.
 ![Containers](https://user-images.githubusercontent.com/59364066/156884521-55036528-abc3-4dec-870b-8be2ae0bae2f.png)
 
 ## Techstack used :
-Frontend : HTML, CSS, Boostrap
-Backend : SQL,PHP
+1. Frontend : HTML, CSS, Boostrap
+2. Backend : SQL,PHP
