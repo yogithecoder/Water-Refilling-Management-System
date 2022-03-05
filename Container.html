@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registration Page</title>
+    
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/w3.css">
+    <link rel="stylesheet" href="css/custom.css">
+    
+  </head>
+  <body style="background:#e6e6e6;color:black;">
+
+    <div class="w3-sidebar w3-light-grey w3-card-4 w3-animate-left" style="width: 180px; display: none;" id="mySidebar">
+      <div class="w3-bar primary">
+        <a href="index.php" class="ho"><span class="w3-bar-item w3-padding-16"><i class="fas fa-tachometer-alt"></i> Dashboard </span></a>
+      <button onclick="w3_close()" class="w3-bar-item w3-button w3-right w3-padding-16" title="close Sidebar"><i class="fa fa-times" aria-hidden="true"></i>
+      </button>
+      </div>
+      <div class="w3-bar-block">
+        
+      <div class="w3-dropdown-hover">
+          <a class="w3-button cc" href="Customer.html">Customers <i class="fa fa-caret-down"></i></a>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a class="w3-bar-item w3-button" href="Customer.html">New Customer</a>
+            <a class="w3-bar-item w3-button" href="public/customerTable.php">Records</a>
+          </div>
+      </div>
+
+      <div class="w3-dropdown-hover">
+        <a class="w3-button cc" href="Product.html">Products <i class="fa fa-caret-down"></i></a>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a class="w3-bar-item w3-button" href="Product.html">New Product</a>
+          <a class="w3-bar-item w3-button" href="public/productTable.php">Records</a>
+        </div>
+      </div>
+
+      <div class="w3-dropdown-hover">
+        <a class="w3-button cc" href="Container.html">Containers <i class="fa fa-caret-down"></i></a>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a class="w3-bar-item w3-button" href="Container.html">New Container</a>
+          <a class="w3-bar-item w3-button" href="public/containerTable.php">Records</a>
+        </div>
+      </div>
+
+      <div class="w3-dropdown-hover">
+        <a class="w3-button cc" href="Delivery.html">Deliveries <i class="fa fa-caret-down"></i></a>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a class="w3-bar-item w3-button" href="Delivery.html">New Order</a>
+          <a class="w3-bar-item w3-button" href="public/deliveryTable.php">Records</a>
+        </div>
+      </div>
+      
+      </div>
+    </div>
+
+
+
+    <div id = "main" class="container">
+      <span title="open Sidebar" style="display: inline-block;" id="openNav" class="w3-button w3-transparent w3-display-topleft w3-xlarge" onclick="w3_open()">&#9776;</span>
+      <div class="row col-lg-6 col-md-offset-3" style="padding-top: 50px;">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>New Container</h1>
+          </div>
+          <div class="panel-body">
+            <form action="container.php" method="post">
+              <div class="form-group">
+                <div class="form-group">
+
+                <label for="cont_name">Container name</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="cont_name"
+                  name="cont_name"
+                />
+              </div>
+              
+              <div class="form-group">
+                <label for="quantity">Quantity(ltr.)</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="quantity"
+                  name="quantity"
+                />
+              </div>
+              <div class="form-group">
+                <label for="on_hand">On hand</label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="on_hand"
+                  name="on_hand"
+                />
+                <div class="form-group">
+                    <br>
+                    <label for="unit">Unit Price</label>
+                    <input
+                      type="number"
+                      class="form-control"
+                      id="unit"
+                      name="unit"
+                    />
+              </div>
+              <input type="submit" class="btn btn-primary" name = "submit1"/>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function w3_open() {
+        document.getElementById("main").style.marginLeft = "300px";
+        document.getElementById("mySidebar").style.width = "300px";
+        document.getElementById("mySidebar").style.display = "block";
+        document.getElementById("openNav").style.display = 'none';
+      }
+      function w3_close() {
+        document.getElementById("main").style.marginLeft = "173px";
+        document.getElementById("mySidebar").style.display = "none";
+        document.getElementById("openNav").style.display = "inline-block";
+      }
+      </script>
+
+  </body>
+</html>

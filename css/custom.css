@@ -1,0 +1,52 @@
+@media screen and (max-width: 455px) {
+    .h3 {
+        font-size:16px;
+    }
+}
+.primary{
+  background-color:#337ab7;
+  font-size: 20px;
+}
+.cc{
+  background-color: #ccc;
+  font-size: 20px;
+}
+.ho:hover{
+  color: chartreuse;
+}
+.tab-head{
+  
+    font-size : 70px;
+    text-align : center;
+    padding-bottom : 50px;
+    font-weight: 600;
+}
+table {
+
+width: 100%;
+font-family: monospace;
+font-size: 22px;
+text-align: center;
+}
+th {
+background-color: #337ab7;
+color: white;
+text-align: center;
+border : 2px solid black;
+}
+td {
+border : 2px solid black;
+padding : 2px;
+}
+tr:nth-child(even) {background-color: #ccc;}
+
+.count{
+  font-family: monospace;
+  text-align: center;
+  padding: 20px 30px;
+  
+}
+.cnum{
+  color: black;
+  font-size: 50px;
+}
